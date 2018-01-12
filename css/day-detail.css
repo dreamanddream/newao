@@ -1,0 +1,46 @@
+body{
+    background: #fff;
+}
+.detail-content{
+    background: #fff;
+}
+.detail-content .detail-theme{
+    color: #777777;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+}
+.detail-theme div img{
+    height:1.2rem;
+    display: inline-block;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+}
+.content .meal{
+    padding:2.5rem 0.5rem;
+    border-bottom: 1px solid #ddd;
+    color:#333;
+    font-size: 1.2rem;
+}
+.content .meal-type{
+    font-size: 1.4rem;
+    color: #fa9f27;
+    width:5rem;
+    padding-left:1.7rem;
+    background-size:1.5rem auto ;
+    margin-bottom: 1.5rem;
+}
+.content .zao{
+    background:url("../images/zaocan.png") no-repeat 0 0.2rem;
+}
+.content .zhong{
+    background:url("../images/wucan.png") no-repeat 0 0.2rem;
+}
+.content .wan{
+    background:url("../images/dinner.png") no-repeat 0 0.2rem;
+}
+.content .meal .text{
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,130 @@
+body{
+    background: #fff;
+}
+.fr{
+    float: right;
+}
+section{
+
+}
+section .list{
+    padding: 1.3rem  1rem 1.4rem;
+    border-bottom: 1px solid #aaa;
+}
+section .list .list-img{
+    margin-right: 0.5rem;
+}
+section .list .list-img img{
+    width: 1.4rem ;
+    height:1.8rem;
+    display: block;
+    vertical-align: middle;
+}
+section .list .list-content{
+    font-size: 1.4rem;
+}
+section .list .list-content .content-title span{
+    font-size: 1.4rem;
+    color:#666;
+}
+section .list .list-content .content-title span.title-right{
+    padding-top: 0.3rem;
+    font-size: 1.1rem;
+    color:#777;
+}
+section .list .list-content .content-body{
+    padding: 0.7rem 0 0 ;
+    color:#333;
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+}
+section .list .list-content .manage{
+    padding-top: 0.7rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color:#c30b0b;
+}
+section .count{
+    padding: 0 1rem ;
+    height:6.5rem ;
+    line-height: 6.5rem;
+}
+section .count .countAll {
+    font-size: 1.2rem;
+    color: #777;
+}
+section .count .countAll span{
+
+    color:#333;
+    font-size: 1.2rem;
+}
+section .count .countAll span.firstCount{
+    padding-left: 0.5rem;
+}
+section .count .aAll{
+    margin-left: 6rem;
+}
+section .count .aAll a{
+    font-size: 1.4rem;
+    color:#333;
+    padding-left: 2.2rem;
+}
+section .count .aAll a:nth-child(1){
+    padding: 0;
+    color:#777;
+}
+section .count .aAll a:nth-child(3){
+    padding-left:1.2rem;
+
+}
+section .bg{
+    height:1.2rem;
+    background: #f2f2f5;
+}
+section .footer{
+    padding: 0.7rem 1rem 0;
+}
+section .footer .footer-title{
+    margin-right: 0.5rem;
+   /* */
+}
+section .footer .footer-title img{
+    width: 1.9rem ;
+    height:1.4rem;
+    vertical-align: middle;
+}
+section .footer .footer-text .text-title{
+    font-size: 1.4rem;
+    color:#fca000;
+}
+section .footer .footer-text .insert{
+    margin: 1.25rem 1.5rem 1.25rem 0 ;
+   border: 2px solid #999;
+    border-radius: 1rem;
+}
+section .footer .footer-text .insert textarea{
+    border: none;
+    width: 100%;
+    padding: 0.7rem ;
+    font-size: 1.3rem;
+    outline: none;
+    resize: none;
+    height:7.5rem;
+    color:#ddd;
+    border-radius: 1rem;
+}
+ .btn{
+     margin: 0 1rem 5.2rem;
+    font-size: 1.5rem ;
+    text-align: center;
+    background: #fca000;
+    height:4.1rem ;
+    color:#fff;
+    line-height:4.1rem ;
+    border-radius: 1rem;
+}
+
+
+
+

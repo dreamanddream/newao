@@ -1,0 +1,36 @@
+body{
+    background: #f2f2f5;
+}
+.menu-list{
+    margin:1rem;
+    background: #fff;
+    padding: 1rem 0;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.menu-list p:first-child{
+    font-size: 1.4rem;
+    color: #333333;
+    padding-left:1rem;
+    float: left;
+}
+.menu-list p:last-child{
+    padding-top:0.2rem;
+    line-height: normal;
+    float: right;
+    font-size: 1.1rem;
+    padding-right: 1rem;
+    color:#777;
+}
+/*查看历史菜谱*/
+.read-history{
+    text-align: center;
+}
+.read-history a{
+    font-size: 1.4rem;
+    color: #fa9f27;
+    text-decoration: underline;
+
+}

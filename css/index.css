@@ -1,0 +1,83 @@
+body{
+    background: #fff;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width:100%;
+}
+.swiper-container .swiper-pagination-bullet-active{
+    background: #fb9e28;
+}
+.swiper-pagination-bullet{
+    width:0.9rem;
+    height:0.9rem;
+    background: #fff;
+    opacity: 1;
+}
+/*我来点评*/
+.remark .remark-title{
+    color:#fb9e28;
+    font-size: 1.8rem;
+    text-align: center;
+    margin:2rem 0;
+}
+.remark-item{
+    padding:0 1.5rem;
+}
+.remark-item .img{
+    font-size: 0;
+    float: left;
+    margin:0 1.3rem 1.5rem;
+}
+.remark-item .img img{
+    width:6rem;
+}
+.menu-wrap{
+    margin:0 1rem;
+}
+.menu-wrap .menu-list{
+    margin-bottom: 0.5rem;
+}
+.menu-list img{
+    width:35.5rem;
+}
+.menu-list .meau-img-theme{
+    position: relative;
+    display: block;
+}
+.menu-list .font-description{
+    position: absolute;
+    left:4rem;
+    top:2.2rem;
+}
+.menu-list .font-description p:first-child{
+    font-size: 1.8rem;
+    color: #fb9e28;
+}
+.menu-list .font-description p:last-child{
+    font-size: 0.9rem;
+    color:#fb9e28;
+}

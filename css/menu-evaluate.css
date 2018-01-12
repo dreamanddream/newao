@@ -1,0 +1,141 @@
+/*蒙层*/
+.content-wrap{
+    position: relative;
+}
+body{
+   background: #fff;
+}
+.mask{
+    background: rgba(153,153,153,0.5);
+    position: fixed;
+    top:0;
+    bottom:0;
+    width:100%;
+    height: 100%;
+    z-index: 7;
+    display: none;
+}
+/*差评表单*/
+.tan{
+  width:27rem;
+    height: 21.8rem;
+    background: #f7f7f7;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,50%);
+    -moz-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    -o-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+    z-index: 10;
+    display: none;
+}
+#evaluate-form .bad-consult{
+    margin:2rem 0 1.5rem;
+    text-align: center;
+    font-size:1.8rem;
+    color:#ff9f00;
+}
+#evaluate-form #bad-text{
+    resize: none;
+    width:23.5rem;
+    height: 10rem;
+    background: #fff;
+    border:1px solid #ddd;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1.6rem;
+    margin-bottom: 1.4rem;
+    color:#c7c7cc;
+    font-size: 1.1rem;
+}
+#evaluate-form .button{
+    border-top:1px solid #ddd;
+    height: 4.4rem;
+    line-height: 4.4rem;
+}
+#evaluate-form .button div{
+    float: left;
+    width:50%;
+   text-align: center;
+    font-size: 1.7rem;
+}
+#evaluate-form .button .quxiao{
+   color:#777;
+    border-right:1px solid #ddd;
+}
+#evaluate-form .button .queding{
+    color: #ff9f00;
+}
+
+/*头部栏目*/
+.bread-title{
+    color:#ff9f00;
+    font-size: 1.3rem;
+    background:#fff;
+    height: 4rem;
+    line-height: 4rem;
+    padding:0 1rem;
+}
+.bread-title ul li{
+    float: left;
+}
+.bread-title ul li:first-child{
+    width:40%;
+}
+.bread-title ul li span{
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+.bread-title ul li:first-child img{
+    width:1.6rem;
+    margin-top: 5px;
+    display: inline-block;
+}
+.bread-title ul li{
+    width:20%;
+}
+.bread-title ul li:not(:first-child) img{
+    width:1.5rem;
+}
+.bread-title ul li:not(:first-child){
+    text-align: center;
+}
+.space{
+    height: 1.1rem;
+    background: #f2f2f5;
+}
+/*评价内容*/
+.menu-content{background: #fff;
+padding:0 .5rem;}
+.menu-content ul li{
+    float:left;
+}
+.menu-content ul:first-child{
+    padding-top:1.7rem;
+}
+.menu-content ul{
+    margin-bottom:1.7rem;
+}
+.menu-content ul li:first-child{
+    font-size: 1.4rem;
+    width:40%;
+}
+.menu-content ul li:not(:first-child){
+    width:20%;
+    text-align: center;
+}
+.menu-content ul li img{
+    width:1.6rem;
+}
+
+.menu-content ul li:last-child{
+    font-size: 1.1rem;
+    color:#ff6c18;
+    float: right;
+}
