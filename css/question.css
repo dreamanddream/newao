@@ -1,0 +1,119 @@
+section .tip{
+    padding: 2rem 1rem;
+
+}
+section .tip .tip-title{
+    font-size: 1.2rem;
+    color:#333;
+    line-height: 1.8rem;
+
+}
+.red{
+    font-size: 1.1rem;
+    color:#c40707;
+}
+.right{
+    color:#777;
+    font-size: 1rem;
+}
+
+section .tip-body{
+    font-size: 1.4rem;
+    color:#333;
+    padding-top: 2rem;
+}
+section .list{
+    background: #fff;
+    padding:1.4rem 2rem;
+    font-size: 1.4rem ;
+    color:#333;
+    border-top: 1px solid #ddd;
+
+}
+section .list img{
+    width: 1.3rem;
+    height:1.3rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    margin-bottom: 0.2rem;
+}
+section .list:last-child{
+    border-bottom: 1px solid #ddd;
+
+}
+section .tip2{
+    padding:  1.3rem 1rem;
+}
+section .tip2 .tip-u{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color:#333;
+}
+section .tip2 .tip-u img{
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+section .tip2 .tip-d{
+    font-size: 1.4rem;
+    color:#333;
+    padding-top: 0.7rem;
+}
+#show{
+    display: none;
+}
+#show2{
+    display: none;
+}
+section .tip2 .tip-d1{
+    font-size: 1.4rem;
+    color:#333;
+    /*padding-top: 1.7rem;*/
+}
+section .tip2 .tip-d2{
+    color:#777;
+    font-size: 1.1rem;
+}
+.list-show{
+    padding: 0.3rem 1.4rem !important;
+    border-bottom: 1px solid #ddd !important;
+    display: none;
+}
+.list-show textarea{
+    border: none;
+    width: 100%;
+    font-size: 1.4rem;
+    outline: none;
+    resize: none;
+    height:3.5rem;
+    color:#333;
+}
+.list-show2{
+    padding: 0.3rem 1.4rem !important;
+    border-bottom: 1px solid #ddd !important;
+    /*display: none;*/
+}
+.list-show2 textarea{
+    border: none;
+    width: 100%;
+    font-size: 1.4rem;
+    outline: none;
+    resize: none;
+    height:6.5rem;
+    color:#333;
+}
+.bold{
+    font-weight: bold;
+}
+.btn{
+      margin:4rem 1rem 5rem;
+      font-size: 1.5rem ;
+      text-align: center;
+      background: #fca000;
+      height:4.1rem ;
+      color:#fff;
+      line-height:4.1rem ;
+      border-radius: 0.6rem;
+  }
+
