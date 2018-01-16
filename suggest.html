@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>新奥</title>
     <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css"  media="all">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/suggest.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/suggest.js"></script>
 </head>
 <body>
 <header>
@@ -72,26 +72,43 @@
             </div>
         </div>
         <div class="bg"></div>
+        <form action="" class="layui-form">
         <div class="footer flexbox">
             <div class="footer-title">
                 <img src="./images/modify.jpg" />
             </div>
+
             <div class="footer-text flex">
                 <div class="text-title">
                     投诉与建议
                 </div>
                 <div class="insert">
-                    <textarea name=""placeholder="请输入内容"></textarea>
+                    <textarea name="建议" placeholder="请输入内容"  required lay-verify="required" class="layui-textarea"></textarea>
                 </div>
 
-
             </div>
-
         </div>
-        <div class="btn">
-            提&nbsp;交
-        </div>
+        <!--<div class="btn">-->
+            <!--提&nbsp;交-->
+        <!--</div>-->
+            <button class="layui-btn" lay-submit="" lay-filter="myworks">提交</button>
+        </form>
     </div>
+
 </section>
+<!--js-->
+<script src="layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form', 'layedit'], function(){
+        var form = layui.form
+            ,layer = layui.layer
+        //监听提交
+        form.on('submit(myworks)', function(data){
+            layer.msg('感谢您的反馈！');
+            console.log(JSON.stringify(data.field))
+            return false;
+        });
+    });
+</script>
 </body>
 </html>

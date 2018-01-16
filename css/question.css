@@ -60,12 +60,12 @@ section .tip2 .tip-d{
     color:#333;
     padding-top: 0.7rem;
 }
-#show{
-    display: none;
-}
-#show2{
-    display: none;
-}
+/*#show{*/
+    /*display: none;*/
+/*}*/
+/*#show2{*/
+    /*display: none;*/
+/*}*/
 section .tip2 .tip-d1{
     font-size: 1.4rem;
     color:#333;
@@ -116,4 +116,116 @@ section .tip2 .tip-d2{
       line-height:4.1rem ;
       border-radius: 0.6rem;
   }
+/*重置layui*/
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+    /*color: #5FB878;*/
+    color: #fd9e02;
+}
+.layui-form-checked, .layui-form-checked:hover {
+    border-color:  #fd9e02;
+    /*background-color:#fd9e02;*/
+}
+.layui-anim.layui-icon {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.layui-form-radio * {
+    font-size: 1.4rem;
+    /* font-size: 14px; */
+}
+/*多选*/
+.layui-form-checkbox[lay-skin=primary] i {
+    position: relative;
+    top: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    border: 1px solid #d2d2d2;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+}
+.layui-form-checked[lay-skin=primary] i {
+    border-color:  #fd9e02;
+    background-color:  #fd9e02;
+    color: #fff;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i {
+    border-color: #fd9e02;
+    color: #fff;
+}
+.layui-form-checkbox[lay-skin=primary] span {
+    float: right;
+    padding-right: 15px;
+    font-size:1.4rem;
+    line-height: 1.4rem;
+    background: 0 0;
+    color: #666;
+}
+.layui-form-checkbox[lay-skin=primary] i {
 
+    border: 1px solid #fd9e02;
+
+}
+.layui-btn {
+    display: inline-block;
+    width:96%;
+    margin-left:2%;
+    margin-top:4rem;
+    margin-bottom:5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background: #fca000;
+    height: 4.1rem;
+    color: #fff;
+    line-height: 4.1rem;
+    border-radius: 0.6rem;
+}
+/*弹层*/
+body .layui-layer-dialog .layui-layer-content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    overflow: hidden;
+    font-size:1.4rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body .layui-layer-btn .layui-layer-btn0 {
+    border-color: #fd9e02;
+    background-color: #fd9e02;
+    color: #fff;
+}
+body .layui-layer-title {
+    padding: 0 80px 0 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    font-size:1.4rem;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0;
+}
+body .layui-layer-btn a {
+    height:2rem;
+    line-height:2rem;
+    margin: 5px 5px 0;
+    padding: 0 1rem;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    color: #333;
+    border-radius: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*body .layui-layer-dialog {*/
+    /*min-width:20rem;*/
+/*}*/
+body .layui-layer-ico5{
+    display: none;
+}

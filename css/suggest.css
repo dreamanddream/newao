@@ -124,6 +124,20 @@ section .footer .footer-text .insert textarea{
     line-height:4.1rem ;
     border-radius: 1rem;
 }
+.layui-btn {
+    display: inline-block;
+    width:96%;
+    margin-left:2%;
+    margin-top:0rem;
+    margin-bottom:5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background: #fca000;
+    height: 4.1rem;
+    color: #fff;
+    line-height: 4.1rem;
+    border-radius: 0.6rem;
+}
 
 
 

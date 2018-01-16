@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>问卷调查</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="js/resize.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/question.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<header>
+    <a href="" class="header-back"><img src="images/back-arrow.png" alt=""></a>
+    <div class="header-title">问卷调查</div>
+    <a href="index.html" class="header-img"><img src="images/logo-index.png" alt=""></a>
+</header>
+<section>
+    <div class="tip">
+        <div class="tip-title">为了强化公司食堂管理，提高食堂服务质量和员工满意度，现对廊坊地区员工食堂运行情况进行调查。此次调查为不记名调查，请大家从公司实际及自身利益出发，认真、详实地填写，以便我们监督改进食堂管理，提升后勤服务水平。感谢您的支持和配合！
+        </div>
+        <div class="tip-body">
+            <span class="red">*</span>您经常用餐的食堂 <span class="right">（每个食堂调研范围在用餐人数20%以上）</span>
+        </div>
+    </div>
+    <form class="layui-form" action="">
+    <div id="ques1">
+        <div class="list">
+            <input type="radio" name="resta" value="总部集团食堂" title="总部集团食堂" checked="">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="科技园第一食堂" title="科技园第一食堂">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="科技园第二食堂" title="科技园第二食堂">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="科技园第三食堂" title="科技园第三食堂">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="高尔夫食堂" title="高尔夫食堂">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="上善食堂" title="上善食堂">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="会所食堂" title="会所食堂">
+        </div>
+        <div class="list">
+            <input type="radio" name="resta" value="宝石花苑食堂" title="宝石花苑食堂">
+        </div>
+    </div>
+    <div class="tip2">
+        <div class="tip-u">
+            <img src="./images/star.png" alt="">客户服务系列：
+        </div>
+        <div class="tip-d">
+            <span class="red">*</span>1. 您感觉食堂的就餐环境卫生情况如何？
+        </div>
+    </div>
+    <div id="ques2">
+        <div class="list" data-result="check-no">
+            <input type="radio" name="service" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+        </div>
+        <div class="list" data-result="check-no">
+            <input type="radio" name="service" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+        </div>
+        <div class="list" data-result="check">
+            <input type="radio" name="service" value="一般" title="C&nbsp;&nbsp;一般">
+        </div>
+        <div class="list" data-result="check">
+            <input type="radio" name="service" value="不满意" title="D&nbsp;&nbsp;不满意">
+        </div>
+    </div>
+    <div id="show">
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>(1)您对餐厅的环境卫生不满意的原因是？
+                <!----> <div class="tip-d2">（如果1题选择"C/D"的请回答本题，可多选）</div>
+            </div>
+        </div>
+        <div id="ques3">
+            <div class="list">
+                <input type="checkbox" name="like1[dimian]" lay-skin="primary" title="A&nbsp;&nbsp;地面有油太滑" checked="">
+            </div>
+            <div class="list">
+                <input type="checkbox" name="like1[desk]" lay-skin="primary" title="B&nbsp;&nbsp;桌面打扫不及时">
+            </div>
+            <div class="list">
+                <input type="checkbox" name="like1[wuji]" lay-skin="primary" title="C&nbsp;&nbsp;餐桌打扫不及时、有污迹">
+            </div>
+            <div class="list">
+                <input type="checkbox" name="like1[canju]" lay-skin="primary" title="D&nbsp;&nbsp;餐盘餐具不干净">
+            </div>
+            <div class="list last-others" data-su="last">
+                <input type="checkbox" name="like1[other]" lay-skin="primary" title="E&nbsp;&nbsp;其他">
+            </div>
+            <div class="list-show list">
+                <textarea name="resul1" class="resul1" placeholder="请输入原因"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="tip2">
+        <div class="tip-d1">
+            <span class="red">*</span>2. 请问您对餐厅工作人员服务的满意程度是？
+        </div>
+    </div>
+    <div id="ques4">
+        <div class="list" data-result="check-no">
+            <input type="radio" name="work" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+        </div>
+        <div class="list" data-result="check-no">
+            <input type="radio" name="work" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+        </div>
+        <div class="list" data-result="check">
+            <input type="radio" name="work" value="一般" title="C&nbsp;&nbsp;一般">
+        </div>
+        <div class="list" data-result="check">
+            <input type="radio" name="work" value="不满意" title="D&nbsp;&nbsp;不满意">
+        </div>
+    </div>
+    <div id="show2">
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>(2)您对餐厅的环境卫生不满意的原因是？
+                 <div class="tip-d2">（如果2题选择"C/D"的请回答本题，可多选）</div>
+            </div>
+        </div>
+        <div id="ques5" style="display: block">
+            <div class="list">
+                <input type="checkbox" name="like2[dimian]" lay-skin="primary" title="A&nbsp;&nbsp;服务人员态度差" checked="">
+            </div>
+            <div class="list">
+                <input type="checkbox" name="like2[desk]" lay-skin="primary" title="B&nbsp;&nbsp;服务缺乏主动性">
+            </div>
+            <div class="list">
+                <input type="checkbox" name="like2[wuji]" lay-skin="primary" title="C&nbsp;&nbsp;服务人员操作动作不熟练">
+            </div>
+            <div class="list">
+                <input type="checkbox" name="like2[canju]" lay-skin="primary" title="D&nbsp;&nbsp;服务人员对菜品不熟悉">
+            </div>
+            <div class="list last-others" data-su="last">
+                <input type="checkbox" name="like2[other]" lay-skin="primary" title="E&nbsp;&nbsp;其他" class="others">
+            </div>
+            <div class="list-show list">
+                <textarea name="resul2" class="resul2" id="" placeholder="请输入原因"></textarea>
+            </div>
+        </div>
+
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>3. 你在食堂就餐中是否发现异物？
+            </div>
+        </div>
+        <div id="ques3">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="works" value="干净卫生，没发现过异物" title="A&nbsp;&nbsp;干净卫生，没发现过异物" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="works" value="没注意" title="B&nbsp;&nbsp;没注意">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="works" value="发现过，偶尔" title="C&nbsp;&nbsp;发现过，偶尔">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="works" value="发现过，经常" title="D&nbsp;&nbsp;发现过，经常">
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>4. 您是否熟知食堂就餐时间？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-time" value="熟知" title="A&nbsp;&nbsp;熟知" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-time" value="知道大概时间段" title="B&nbsp;&nbsp;知道大概时间段">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-time" value="不知道" title="C&nbsp;&nbsp;不知道">
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>5. 你觉得食堂就餐秩序如何？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="how" value="井然有序，人人自觉排队" title="A&nbsp;&nbsp;井然有序，人人自觉排队" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="how" value="大部分人都排队，个别人插队" title="B&nbsp;&nbsp;大部分人都排队，个别人插队">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="how" value="排队无序" title="C&nbsp;&nbsp;排队无序">
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>(5). 如果食堂就餐秩序较差，食堂工作人员是否会维持秩序？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-zhi" value="主动提醒和维护" title="A&nbsp;&nbsp;主动提醒和维护" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-zhi" value="偶尔提醒和维护" title="B&nbsp;&nbsp;偶尔提醒和维护">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-zhi" value="从未提醒和维护" title="C&nbsp;&nbsp;从未提醒和维护">
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>6. 你是否遇到就餐时间内没有饭吃的情况？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-p" value="从没遇到过" title="A&nbsp;&nbsp;从没遇到过" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-p" value="偶尔遇到过" title="B&nbsp;&nbsp;偶尔遇到过">
+            </div>
+            <div class="list last-others" data-result="check" data-su="last">
+                <input type="radio" name="work-p" value="经常遇到" title="C&nbsp;&nbsp;经常遇到">
+            </div>
+            <div class="list-show list" style="display: block;">
+                <textarea name="resul3" class="resul3" placeholder="如果第6题选C，请备注您的常态用餐时间"></textarea>
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>7. 您对工作人员的服务态度
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-ps" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-ps" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-ps" value=" 一般" title="C&nbsp;&nbsp;一般">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-ps" value="不满意" title="C&nbsp;&nbsp;不满意">
+            </div>
+        </div>
+
+        <div class="tip2">
+            <div class="tip-u">
+                <img src="./images/star.png" alt="">饭菜质量系列：
+            </div>
+            <div class="tip-d">
+                <span class="red">*</span>8.您觉得食堂菜品味道如何？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-ta" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-ta" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-ta" value=" 一般" title="C&nbsp;&nbsp;一般">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-ta" value="不满意" title="C&nbsp;&nbsp;不满意">
+            </div>
+        </div>
+
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>9. 您觉得食堂菜品的花样品种
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-ty" value="品种丰富" title="A&nbsp;&nbsp;品种丰富" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-ty" value="更新及时" title="B&nbsp;&nbsp;更新及时">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-ty" value="更新频率较慢" title="C&nbsp;&nbsp;更新频率较慢">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-ty" value="缺少创新" title="C&nbsp;&nbsp;缺少创新">
+            </div>
+            <div class="list-show list" style="display: block;">
+                <textarea name="resul4"  class="resul4" placeholder="如果第9题选C/D，请说明您的期待目标"></textarea>
+            </div>
+        </div>
+
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>10. 食堂所采购原料（肉、菜、油、米、面）新鲜程度您满意吗？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-liao" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-liao" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-liao" value="一般，不太新鲜" title="C&nbsp;&nbsp;一般，不太新鲜">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-liao" value="非常不满意，有变质现象" title="C&nbsp;&nbsp;非常不满意，有变质现象">
+            </div>
+        </div>
+
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>11. 您认为食堂饭菜油量使用如何？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-you" value="油量适中" title="A&nbsp;&nbsp;油量适中" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-you" value="油量偏少" title="B&nbsp;&nbsp;油量偏少">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-you" value="油量偏多" title="C&nbsp;&nbsp;油量偏多">
+            </div>
+            <div class="list" data-result="check">
+                <input type="radio" name="work-you" value="太油腻" title="C&nbsp;&nbsp;太油腻">
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>12. 您认为主菜的辅料搭配如何？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-liz" value="主料辅料搭配适中" title="A&nbsp;&nbsp;主料辅料搭配适中" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-liz" value="辅料较多" title="B&nbsp;&nbsp;辅料较多">
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>13. 您对菜品的外形是否满意？
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lim" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lim" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lim" value="一般" title="C&nbsp;&nbsp;一般">
+            </div>
+            <div class="list radio-other" data-result="check-no">
+                <input type="radio" name="work-lim" value="其他" title="D&nbsp;&nbsp;其他">
+            </div>
+            <div class="list-show list">
+                <textarea name="resul5"  class="restul5" placeholder="请说明您最不满意的方面"></textarea>
+            </div>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1">
+                <span class="red">*</span>14. 您认为食堂菜品摆放顺序如何?
+            </div>
+        </div>
+        <div id="ques4">
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lis" value="非常满意" title="A&nbsp;&nbsp;非常满意" checked="">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lis" value="比较满意" title="B&nbsp;&nbsp;比较满意">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lis" value="一般" title="C&nbsp;&nbsp;一般">
+            </div>
+            <div class="list" data-result="check-no">
+                <input type="radio" name="work-lis" value="非常不满意" title="D&nbsp;&nbsp;非常不满意">
+            </div>
+        </div>
+    </div>
+    <div class="tip2">
+        <div class="tip-u">
+            <img src="./images/star.png" alt="">其他建议：
+        </div>
+        <div class="tip-d">
+            <span class="red">*</span>您最喜欢的餐厅主食、主菜、辅菜（可列举其一二）？
+        </div>
+    </div>
+    <div class="list-show2 list">
+        <!--<textarea name="caiming"  placeholder="请输入菜名" lay-verify="required" autocomplete="off" class="layui-textarea"></textarea>-->
+        <textarea name="菜名" required lay-verify="required" placeholder="请输入菜名" class="layui-textarea" autocomplete="off" ></textarea>
+    </div>
+    <div class="tip2">
+        <div class="tip-d1">
+            <span class="red">*</span>请您对餐厅提出更好的建议：
+        </div>
+    </div>
+        <div class="list-show2 list">
+            <!--<textarea name="jianyi"  placeholder="请输入建议" lay-verify="required" autocomplete="off" class="layui-textarea"></textarea>-->
+         <textarea name="建议" required lay-verify="required" placeholder="请输入建议" class="layui-textarea"></textarea>
+        </div>
+        <div class="tip2">
+            <div class="tip-d1 bold">
+                再次感谢您对我们工作的支持与配合！
+            </div>
+        </div>
+         <button class="layui-btn" lay-submit="" lay-filter="mywork">提交问卷</button>
+    </form>
+</section>
+<div class="back-top" id="back-top"><img src="images/back-top.png" alt=""></div>
+<!--js-->
+<script src="layui/layui.js" charset="utf-8"></script>
+<script>
+    $(function () {
+        var others=$(".last-others");
+        var list_show = $(".list-show");
+        others.on("click",function () {
+            if($(this).children().hasClass("layui-form-checked")){
+                $(this).next().show();
+            }else{
+                $(this).next().hide();
+            }
+        })
+    })
+    $(function () {
+        var radio_other=$(".radio-other");
+        radio_other.on("click",function () {
+            if($(this).children().hasClass("layui-form-radioed")){
+                $(this).next().show();
+            }else if($(this).children().hasClass("layui-unselect")){
+                $(this).next().hide();
+            }
+        })
+    })
+</script>
+<script>
+    layui.use(['form', 'layedit'], function(){
+        var form = layui.form
+            ,layer = layui.layer
+        //监听提交
+        form.on('submit(mywork)', function(data){
+            layer.msg('感谢您的反馈！');
+            console.log(JSON.stringify(data.field))
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>
