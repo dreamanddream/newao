@@ -12,7 +12,26 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <style>
-
+        #msg{
+            position:fixed;
+            bottom:0px;
+            left:50%;
+            /*right:35%;*/
+            /*width:20%;*/
+            width:50%;
+            margin-left:-25%;
+            text-align: center;
+            color:#fff;
+            font-size:1.4rem;
+            line-height:3rem;
+            height:3rem;
+            /*padding:0.5rem 0;*/
+            background: rgba(0,0,0,.6);
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            border-radius: 0.5rem;
+            z-index: 999999;
+        }
     </style>
 </head>
 <body>
@@ -409,7 +428,7 @@
     </div>
     <div class="list-show2 list">
         <!--<textarea name="caiming"  placeholder="请输入菜名" lay-verify="required" autocomplete="off" class="layui-textarea"></textarea>-->
-        <textarea name="菜名" required lay-verify="required" placeholder="请输入菜名" class="layui-textarea" autocomplete="off" ></textarea>
+        <textarea name="菜名"  placeholder="请输入菜名" class="layui-textarea meal_name" autocomplete="off" ></textarea>
     </div>
     <div class="tip2">
         <div class="tip-d1">
@@ -418,17 +437,19 @@
     </div>
         <div class="list-show2 list">
             <!--<textarea name="jianyi"  placeholder="请输入建议" lay-verify="required" autocomplete="off" class="layui-textarea"></textarea>-->
-         <textarea name="建议" required lay-verify="required" placeholder="请输入建议" class="layui-textarea"></textarea>
+         <textarea name="建议"  placeholder="请输入建议" class="layui-textarea jianyi"></textarea>
         </div>
         <div class="tip2">
             <div class="tip-d1 bold">
                 再次感谢您对我们工作的支持与配合！
             </div>
         </div>
-         <button class="layui-btn" lay-submit="" lay-filter="mywork">提交问卷</button>
+         <!--<button class="layui-btn" lay-submit="" lay-filter="mywork" onclick="twoCode()">提交问卷</button>-->
+        <div class="btn" onclick="twoCode()">提交问卷</div>
     </form>
 </section>
 <div class="back-top" id="back-top"><img src="images/back-top.png" alt=""></div>
+
 <!--js-->
 <script src="layui/layui.js" charset="utf-8"></script>
 <script>
@@ -454,16 +475,57 @@
         })
     })
 </script>
+<!--信息提示-->
+
+<script>
+    function twoCode() {
+        var jianyi=$(".jianyi");
+        var meal_name=$(".meal_name");
+        if(meal_name.val()==""){
+            toast("菜名不能为空");
+            return;
+        }
+        if(jianyi.val()==""){
+            toast("建议不能为空");
+            return;
+        };
+
+    }
+    /*信息类型*/
+    function toast(el){
+        /*if (!window.navigator.onLine) {
+         return loadingFail("无网络，请检查网络设置");
+         }*/
+        // alert(1);
+        $('#msg').remove();
+        var _msghtml="";
+        _msghtml+='<div id="msg">';
+        _msghtml+=el;
+        _msghtml+='</div>';
+
+        $(document.body).append(_msghtml);
+        $("#msg").animate({
+            bottom:'1.5rem'
+        },100,function(){
+            setTimeout("$('#msg').remove();",3000)
+        });
+
+    }
+</script>
+
 <script>
     layui.use(['form', 'layedit'], function(){
         var form = layui.form
             ,layer = layui.layer
+
         //监听提交
-        form.on('submit(mywork)', function(data){
-            layer.msg('感谢您的反馈！');
-            console.log(JSON.stringify(data.field))
-            return false;
-        });
+        // form.on('submit(mywork)', function(data){
+        //     twoCode();
+        //
+        //     layer.msg('感谢您的反馈！',"area: ['20rem', '20rem']");
+        //     console.log(JSON.stringify(data.field))
+        //     return false;
+        // });
     });
 </script>
 
